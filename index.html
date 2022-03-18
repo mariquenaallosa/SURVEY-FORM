@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC: Survey From</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"><b>Encuesta de servicio</b></h1>
+    <p id="description" class="description text-center">
+      Gracias por tomarse el tiempo para ayudarnos a mejorar el servicio.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Ingrese su nombre"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Ingrese su Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Edad<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Edad"
+      />
+    </div>
+    <div class="form-group">
+      <p>
+¿Qué opción describe mejor su ocupación actual?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Elija una opción</option>
+        <option value="student">Estudiante</option>
+        <option value="trabajo">Trabjo Full Time</option>
+        <option value="Aprendiz"> Aprendiz Full Time</option>
+        <option value="preferNo">Prefiero no contestar</option>
+        <option value="otro">Otro</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>¿Recomendarías nuestro servicio a una amiga?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitivamente</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Tal vez</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />No estoy seguro/a</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        ¿Cuál es tu servicio favorito?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Seleciona una opción</option>
+        <option value="traller">Talleres</option>
+        <option value="proyectos">Proyectos</option>
+        <option value="comunidad">Comunidad</option>
+        <option value="curso">Cursos</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        ¿Qué te gustaría ver mejorado?
+        <span class="clue">(
+Marque todo lo que corresponda)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="interfaz"
+          type="checkbox"
+          class="input-checkbox"
+        />Interfaz</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Tiempo-respuesta"
+          type="checkbox"
+          class="input-checkbox"
+        />Tiempo de respuesta</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Material disponible</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="deafios"
+          type="checkbox"
+          class="input-checkbox"
+        />Desafios</label
+      >
+    <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Videos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="foro"
+          type="checkbox"
+          class="input-checkbox"
+        />Foro</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Cursos adicionales</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+¿Algún comentario o sugerencia?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Ingrese su comentario aquí..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
